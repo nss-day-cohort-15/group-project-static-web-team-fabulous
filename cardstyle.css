@@ -42,7 +42,6 @@ header {
 }
 #cards footer {
     width: 100%;
-    /*order: 2.5px solid grey;*/
 
 }
 #cards header {
@@ -55,16 +54,7 @@ header {
     margin: 10px 15px;
 }
 
-/*.product_description p{
-    font-weight: bolder;
-    text-align: justify;
-    margin: 10px 10px;
-
-}*/
-
 .product_price {
- /*   margin-top: 100px;
-  padding-top: 100px;*/
   border: 3px solid green;
   border-radius: 25px;
   background-color: #0f3d0f;
@@ -84,17 +74,29 @@ header {
   background-color: #70db70;
 }
 
-/*
 
-.janky {j
-  border: 1px solid red;
-  width: 30%;
-  display: inline-block;
-  float: left;
-  margin-left: 2.5%
+#navbar li {
+  display: block;
+  background-color: #BCEE9a;
+  margin: 10px 10px 10px 10px;
+  list-style-type: none;
+  font-size: 1.3em;
+  text-align: center;
 }
 
-.janky header {
-   height: 75px;
-}*/
+#navbar ul {
+  background-color: #BCEE9a;
+  padding: 0;
+  margin-top: 5px;
+}
+#navbar a {
+  color: white;
+  text-decoration: none;
+  display:block;
+  padding: 5px 5px 5px 5px;
+}
 
+#navbar a:hover {
+  background-color: white;
+  color: #BCEE9a;
+}
