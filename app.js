@@ -53,14 +53,13 @@ var products = [
   url         : "http://images.complex.com/complex/image/upload/c_limit,fl_progressive,q_80,w_680/xx324arf2a4zpcdetp1i.jpg"
 }
 ];
+
 function displayProducts() {
 
 
 for (var i = 0; i < products.length; i++) {
-    // console.log(products[i].name, products[i].description, products[i].price, products[i].url);
+ document.getElementById("cards").innerHTML += '<div class="janky"><header>' + products[i].name + '</header>' + '<p class="product_description">' + products[i].description + '</p>' + '<p><span class="product_price">' + products[i].price + '</span></p>' + '<a href ='+ products[i].url +'/> <img src =' + products[i].url + '> </a></div>'
 
- document.getElementById("cards").innerHTML += `<header> ${ products[i].name } </header><p class="product_description">${products[i].description}
-</p><p><span class="product_price">${products[i].price}</span></p><a href=${ products[i].url }><img src= ${products[i].url}><footer></footer></a>`
 }
 }
 
@@ -68,9 +67,31 @@ var test_drive = document.getElementById("test_drive");
 test_drive.addEventListener('click', function(e) {
  // function loadPage() {
  //        console.log("page has loaded");
+
         displayProducts();
+
       })
+
+
       // window.onload = loadPage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

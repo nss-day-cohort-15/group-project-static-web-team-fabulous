@@ -5,6 +5,7 @@ body {
 
 header {
    padding-top: 15px;
+
 }
 
 #wrapper {
@@ -83,4 +84,17 @@ header {
   background-color: #70db70;
 }
 
+/*
+
+.janky {
+  border: 1px solid red;
+  width: 30%;
+  display: inline-block;
+  float: left;
+  margin-left: 2.5%
+}
+
+.janky header {
+   height: 75px;
+}*/
 
