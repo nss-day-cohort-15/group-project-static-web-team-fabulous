@@ -1,0 +1,86 @@
+body {
+    100%;
+    font-family: 'Raleway', sans-serif;
+}
+
+header {
+   padding-top: 15px;
+}
+
+#wrapper {
+    background-color: #8CDD81;
+    display: inline-block;
+    width: 100%;
+    border: 1px solid #000;
+    font-color: #000;
+}
+
+#button, #wrapper header, h4 {
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+
+#cards {
+    background-color: #F0FFF0;
+    float: left;
+    margin: 10px auto;
+
+    /*position: center;*/
+
+
+}
+
+#cards img {
+    width: 50%;
+    height: 350px;
+    display: block;
+    margin: 0 auto;
+
+}
+#cards footer {
+    width: 100%;
+    /*order: 2.5px solid grey;*/
+
+}
+#cards header {
+    background-color: #29a329;
+    text-align: center;
+    border: 2px dotted #000;
+}
+
+#cards p {
+    margin: 10px 15px;
+}
+
+/*.product_description p{
+    font-weight: bolder;
+    text-align: justify;
+    margin: 10px 10px;
+
+}*/
+
+.product_price {
+ /*   margin-top: 100px;
+  padding-top: 100px;*/
+  border: 3px solid green;
+  border-radius: 25px;
+  background-color: #0f3d0f;
+  color: #FFF;
+
+  padding: 3px;
+  margin: 4px 4px;
+    left: 0px;
+    bottom: 0px;
+}
+
+
+.product_description {
+  text-align: center;
+  font-weight: 800em;
+  border: 1px dotted black;
+  background-color: #70db70;
+}
+
+
