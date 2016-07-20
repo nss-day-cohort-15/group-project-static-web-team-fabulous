@@ -58,24 +58,18 @@ function displayProducts() {
 
 
 for (var i = 0; i < products.length; i++) {
- document.getElementById("cards").innerHTML += '<div class="janky"><header>' + products[i].name + '</header>' + '<p class="product_description">' + products[i].description + '</p>' + '<p><span class="product_price">' + products[i].price + '</span></p>' + '<a href ='+ products[i].url +'/> <img src =' + products[i].url + '> </a></div>'
+ document.getElementById("cards").innerHTML += `<div class="janky"><header>${products[i].name}</header><p class="product_description">${products[i].description}</p><p><span class="product_price">${products[i].price}</span></p><a href =${ products[i].url}<img src =${products[i].url}</a></div>`
 
 }
 }
 
 var test_drive = document.getElementById("test_drive");
 test_drive.addEventListener('click', function(e) {
- // function loadPage() {
- //        console.log("page has loaded");
+
 
         displayProducts();
 
       })
-
-
-      // window.onload = loadPage();
-
-
 
 
 
