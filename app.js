@@ -67,18 +67,35 @@ var test_drive = document.getElementById("test_drive");
 test_drive.addEventListener('click', function(e) {
  // function loadPage() {
  //        console.log("page has loaded");
-
         displayProducts();
+})
 
-      })
+// Implementing a SPA Navigation
 
+var navLinks = document.querySelectorAll('li')
+var pages = document.querySelectorAll('.page')
 
-      // window.onload = loadPage();
+showPage(location.hash)
 
+for (var i = 0; i < navLinks.length; i++) {
+  navLinks[i].addEventListener('click', clickedNavLink);
+}
 
+function clickedNavLink (evt) {
+  for (var i = 0; i < pages.length; i++) {
+    pages[i].classList.add('hidden')
+  }
 
+  showPage(evt.target.hash)
+}
 
-
+function showPage (id) {
+  if (id) {
+  document.querySelector(id).classList.remove('hidden')
+  } else {
+    document.querySelector('#home').classList.remove('hidden')
+  }
+}
 
 
 
